@@ -1,0 +1,45 @@
+<odoo>
+    <record id="view_real_estate_type_form" model="ir.ui.view">
+        <field name="name">real.estate.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <form string="Real Estate type From">
+                <sheet>
+                     <label for="name" string="Name" class="oe_edit_only"/>
+                    <h2 class="font-weight-bold">
+                        <field name="name" style="font-size:25px;"/>
+                    </h2>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_real_estate_type_tree" model="ir.ui.view">
+        <field name="name">real.estate.type.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree string="Tree view" sample="1">
+                <field name="name" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_real_estate_type" model="ir.actions.act_window">
+        <field name="name">Real Estate Type</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your First Record!!
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_real_estate_type_main"
+              name="Real Estate Type"
+              parent="real_estate.menu_real_estate_root"
+              action="real_estate.action_real_estate_type"
+              sequence="150"/>
+
+</odoo>
