@@ -54,7 +54,7 @@
     <menuitem id="menu_real_estate_tag_main"
               name="Real Estate Tag"
               parent="menu_real_estate_root"
-              action="real_estate.estate_property_tag_action"
+              action="estate_property_tag_action"
               sequence="170"/>
 
 

@@ -38,8 +38,8 @@
     </record>
     <menuitem id="menu_real_estate_type_main"
               name="Real Estate Type"
-              parent="real_estate.menu_real_estate_root"
-              action="real_estate.action_real_estate_type"
+              parent="menu_real_estate_root"
+              action="action_real_estate_type"
               sequence="150"/>
 
 </odoo>
